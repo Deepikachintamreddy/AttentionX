@@ -211,8 +211,11 @@ def _run_analysis(uploaded, gemini_key, clip_duration, top_n_peaks,
             ("shock",     "⚡", a.hooks.shock),
             ("value",     "💡", a.hooks.value),
         ]:
-            cls = "hook-pill hook-selected" if hook_type == style else "hook-pill"
-            hook_pills += f"<span class='{cls}'>{icon} {text}</span><br>"
+            if hook_type == style:
+                style_str = "background:#f7c948;color:#111;border:1px solid #f7c948;font-weight:600;"
+            else:
+                style_str = "background:#1e1e3a;color:#aab;border:1px solid #3a3a6a;"
+            hook_pills += f"<span style='display:inline-block;border-radius:20px;padding:5px 14px;margin:3px 0;font-size:0.83rem;{style_str}'>{icon} {text}</span><br>"
 
         st.markdown(f"""
         <div class='score-card'>
