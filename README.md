@@ -3,7 +3,7 @@
 > Turn a 60-minute lecture into 3 viral-ready short clips in minutes.
 
 [![Demo Video](https://img.shields.io/badge/Demo-Watch%20Now-f7c948?style=for-the-badge&logo=youtube)](YOUR_DEMO_LINK_HERE)
-[![HuggingFace](https://img.shields.io/badge/🤗%20Live%20Demo-HuggingFace%20Spaces-blue?style=for-the-badge)](YOUR_HF_SPACE_LINK)
+[![HuggingFace](https://img.shields.io/badge/🤗%20Live%20Demo-HuggingFace%20Spaces-blue?style=for-the-badge)](https://huggingface.co/spaces/DeepikaChintamreddy/AttentionX)
 
 ---
 
@@ -149,7 +149,7 @@ The composite **Viral Score** ranks clips for final selection.
 
 ## 🎥 Demo
 
-📽️ **[Watch the full demo here](YOUR_DEMO_LINK_HERE)**
+📽️ **[Watch the full demo here](https://drive.google.com/file/d/1aJXB3y76dmwOoi6q3wlkqdpYlzC-AM8s/view?usp=sharing)**
 
 The demo shows:
 1. Uploading a 30-minute lecture
