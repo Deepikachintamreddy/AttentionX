@@ -14,6 +14,9 @@ st.set_page_config(
 
 st.markdown("""
 <style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #0a0a0f !important; }
+  .block-container { padding-top: 1rem !important; }
   [data-testid="stAppViewContainer"] { background: #0a0a0f; }
   [data-testid="stSidebar"] { background: #111118; border-right: 1px solid #333; }
   [data-testid="stSidebar"] label { color: #d0d0e8 !important; font-size: 0.92rem; }

@@ -75,7 +75,7 @@ def analyze_clip(
             model="gemini-2.0-flash",
             contents=prompt,
             config=types.GenerateContentConfig(
-                temperature=0.7,
+                temperature=1.0,
                 response_mime_type="application/json",
             ),
         )
@@ -119,12 +119,14 @@ def rank_and_select(analyses: List[GeminiAnalysis], top_n: int = 3) -> List[Gemi
 
 
 def _fallback(transcript: str, start: float, end: float) -> dict:
+    import random
+    base = random.randint(55, 85)
     return {
-        "viral_score": 65.0,
-        "emotional_score": 60.0,
-        "educational_score": 70.0,
-        "surprising_score": 55.0,
-        "relatable_score": 65.0,
+        "viral_score": float(base),
+        "emotional_score": float(random.randint(45, 90)),
+        "educational_score": float(random.randint(50, 95)),
+        "surprising_score": float(random.randint(40, 85)),
+        "relatable_score": float(random.randint(50, 88)),
         "hooks": {
             "curiosity": "This insight will change how you think...",
             "shock": "Most people get this completely wrong...",

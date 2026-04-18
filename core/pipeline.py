@@ -193,7 +193,7 @@ def run_pipeline(
         dummy_segments = [{
             "start": peak.start_sec,
             "end": peak.end_sec,
-            "text": f"High energy moment at {peak.peak_sec:.0f} seconds. Audio attention score {peak.attention_score:.0f} out of 100."
+            "text": f"Video segment from {peak.start_sec:.0f}s to {peak.end_sec:.0f}s. This moment has audio energy score {peak.attention_score:.1f}/100, RMS loudness score {peak.rms_score:.1f}/100, speech rate score {peak.zcr_score:.1f}/100. Peak energy detected at {peak.peak_sec:.0f}s. Duration: {peak.duration:.0f} seconds."
         }]
         analysis = analyze_clip(
             transcript_segments=dummy_segments,
