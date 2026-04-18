@@ -1,0 +1,18 @@
+[server]
+maxUploadSize = 2048
+headless = true
+runOnSave = false
+maxMessageSize = 2048
+enableWebsocketCompression = false
+
+[browser]
+gatherUsageStats = false
+serverPort = 8501
+
+[theme]
+base = "dark"
+primaryColor = "#f7c948"
+backgroundColor = "#0a0a0f"
+secondaryBackgroundColor = "#111118"
+textColor = "#f0f0ff"
+font = "sans serif"
