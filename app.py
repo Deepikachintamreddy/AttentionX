@@ -281,8 +281,10 @@ with st.sidebar:
     """, unsafe_allow_html=True)
 
     st.markdown("### ⚙️ Settings")
+    import os
     gemini_key = st.text_input(
         "🔑 Gemini API Key",
+        value=os.environ.get("GEMINI_API_KEY", ""),
         type="password",
         placeholder="AIza...",
         help="Free from aistudio.google.com"
